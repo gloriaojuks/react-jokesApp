@@ -1,28 +1,19 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Joke from "./Joke";
 
-class App extends Component {
-  render() {
+function App() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+        <div>
+            <h1 className="heading"> Proramming Riddles and Jokes</h1>
+            <Joke question="what goes on and never comes back" punchLine="water"/>
+            <Joke question="what is never eaten alive" punchLine="Animals" />
+            <Joke question="" punchLine="It starts from zero position"/>
+            <Joke question="Which Mathematician has the negative number" punchLine="Alfred"/>
+            <Joke question="Methods begin with arrows" punchLine="Arrow Functions"/>
+            <button className="btns">Previous</button>
+            <button className="btns">Next</button>
+        </div>
+    )
 }
 
-export default App;
+export default App
